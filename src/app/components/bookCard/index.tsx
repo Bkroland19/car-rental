@@ -90,7 +90,7 @@ const DateCalendar = styled(Calendar)`
   ${({ offset }: any) =>
     offset &&
     css`
-      left: -6em;
+      left: -6.2em;
     `};
   @media (min-width: ${SCREENS.md}) {
     top: 3.5em;
