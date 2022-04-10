@@ -1,19 +1,40 @@
 import TypeWriterEffect from 'react-typewriter-effect';
+import styled from 'styled-components';
+import tw from 'twin.macro';
+import { ITypewritter } from '../../../typings/typewritter';
 
 
-interface props {
-    text: string,
-    speed: number,
-    cursor: string,
-    delay: number,
+interface IProps extends ITypewritter{
+
 }
-export default function TypeWritter({ text,  speed, delay  }:props) {
+
+
+
+const Description = styled.p`
+${tw`
+  text-xs
+  lg:text-sm
+  xl:text-lg
+  sm:max-h-full
+  overflow-hidden
+  max-h-12
+  text-gray-800
+`};
+`;
+export default function TypeWritter(props: IProps) {
+    const {
+        text,
+        delay,
+        cursor,
+        speed,
+        deleteSpeed,
+      } = props;
   return (
     <div>
       <TypeWriterEffect
         text={text}
         speed={speed}
-        deleteSpeed={speed}
+        deleteSpeed={deleteSpeed}
         delay={delay}
         cursor="_"
       />

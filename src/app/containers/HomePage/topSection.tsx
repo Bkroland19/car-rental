@@ -7,6 +7,7 @@ import MclarenCarImg from  '../../../assets/images/mclaren-orange-big.png';
 import  BlobImg  from '../../../assets/images/blob.svg';
 import { SCREENS } from '../../components/responsive';
 import { Button } from '../../components/button';
+import TypeWritter from '../../components/typewriter';
 
 
  const TopSectionContainer = styled.div`
@@ -130,7 +131,7 @@ export default function TopSection() {
                 Get the best car for your needs
             </Slogan>
             <Description>
-                Always Choose the best car for your needs from our stores or order it remotely at the best price for  you 
+             <TypeWritter speed={200} text = "We bring to you the best cars from all Automobile Manufacturers" cursor='_' deleteSpeed={20} delay = {1}  />
                 </Description>
                    <ButtonsContainer>
 
