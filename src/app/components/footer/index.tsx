@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-//import { Logo } from "../logo";
+import { Logo } from "../logo";
 
 const FooterContainer = styled.div`
   //min-height: 24em;
@@ -155,7 +155,7 @@ export default function Footer() {
     <FooterContainer>
       <InnerContainer>
         <AboutContainer>
-         
+          <Logo color="white" bgColor="dark" />
           <AboutText>
             Yourcar is a Car renting and selling company located in many
             countries across the world which has high quality cars and top rated
@@ -208,7 +208,7 @@ export default function Footer() {
             <RedIcon>
               <FontAwesomeIcon icon={faPhoneAlt} />
             </RedIcon>
-            <SmallText>+256 703-800-581</SmallText>
+            <SmallText>+256773078860</SmallText>
           </HorizontalContainer>
         </SectionContainer>
         <SectionContainer>
@@ -223,7 +223,7 @@ export default function Footer() {
       </InnerContainer>
       <BottomContainer>
         <CopyrightText>
-          Copyright &copy; {new Date().getFullYear()} Bk'sCar House. All rights
+          Copyright &copy; {new Date().getFullYear()} Yourcar. All rights
           reserved.
         </CopyrightText>
       </BottomContainer>
